@@ -1,0 +1,109 @@
+1. Create an HTML page with an input box and a button. When you click on the button, if the input value is divisible by 2, set the value (contents) of the input box to 0. Otherwise, do nothing.
+    * Overview
+<!DOCTYPE html>
+<html>
+    <body>
+        <input class="inputbox" type="text">
+<button class="oktherefriend">OK</button>
+<script>
+    const button = document.querySelector(".oktherefriend")
+    const mvp = document.querySelector(".inputbox")
+    button.onclick = () => {
+        const val = mvp.value
+        if (+val % 2 === 0) {
+            mvp.value = 0
+        }
+    }
+</script>
+    </body>
+</html>
+
+- Overview
+    1. Add 2 input and button tags. You may want to give them class attributes.
+    2. Get the elements.
+    3. When you click on the button, `onclick` function should do this:
+        - Get values from input elements (make sure to convert them to numbers!)
+        - Use alert to display the sum of value1 + value2
+
+        <html>
+            <head></head>
+            <body>
+                <input class="in1" type="text">
+                <input class="in2" type="text">
+                <button class="but">Get the SUMM!!!</button>
+                <script>
+                    const in1 = document.querySelector('.in1')
+                    const in2 = document.querySelector('.in2')
+                    const bbb = document.querySelector('.but')
+                    bbb.onclick = () => {
+                        const v1 = +in1.value
+                        const v2 = +in2.value
+                        alert(+v1 + +v2)
+                    }
+                </script>
+            </body>
+        </html>
+
+3. Create a UI for JS1 challenge 2 - Add an input box and a button. When you click on the button, use alert to display "Big" if the input number is greater than 5. Otherwise, nothing happens.
+    * Overview
+        1. Add input and button tags. Select the elements.
+        2. When you click on the button, onclick function should do this:
+            * Get the value from input element (make sure to convert it to a number)
+            * if the number is greater than 5, run the alert function!
+
+<input class="ok1" type="text">
+
+<button class="ok2">BIG O NUMBER?</button>
+
+<script>
+    const input = document.querySelector('.ok1')
+    const button = document.querySelector('.ok2')
+    button.onclick = () => {
+    const inputValue = +input.value
+    if(inputValue > 5) {
+      alert('Big')
+    }
+  }
+</script>
+
+4. [Create a UI for JS0 challenge 7](https://songz.c0d3.com/js0/5.html) - Add 2 input boxes and a button. When you click on the button, use alert to display true if the sum of the 2 inputs is greater than 10. Otherwise, display false.
+    - Overview
+    <html>
+        <head></head>
+        <body>
+            <input class="in1" type="text">
+            <input class="in2" type="text">
+            <button class="but">IS SUM greater than 10?</button>
+            <script>
+                const in1 = document.querySelector('.in1')
+                const in2 = document.querySelector('.in2')
+                const bbb = document.querySelector('.but')
+                bbb.onclick = () => {
+                    const v1 = +in1.value
+                    const v2 = +in2.value
+                    alert(+v1 + +v2 > 10)
+                }
+            </script>
+        </body>
+    </html>
+
+    5. [Create a UI for JS0 challenge 8](https://songz.c0d3.com/js0/6.html) - Add 2 input boxes and 2 buttons (call them 'Generate' and 'Submit'). When the 'Generate' button is clicked, the function solution (for challenge 8) runs and a function is returned. When 'Submit' button is clicked, run the returned function and use alert to display its result.
+    - Hint
+    Recall that challenge 8 takes in 2 numbers, and returns a function that returns the sum of the 2 numbers when the function is executed.
+    const a = solution(5,6) // a is a function, and a() will return 11
+    - Overview
+    - Meme
+    - Debrief
+    
+    <html>
+        <head></head>
+        <body>
+            <input class="in1" type="text">
+            <input class="in2" type="text">
+            <button class="generateB">Generate</button>
+            <button class="submitB">submit</button>
+            <submit>
+                const in1 = document
+            </submit>
+        </body>
+    </html>       
